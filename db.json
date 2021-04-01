@@ -1,0 +1,94 @@
+{
+  "pets": [
+    {
+      "nome": "Costelinha",
+      "tipo": "Cachorro",
+      "idade": 5,
+      "raca": "Vira-lata",
+      "peso": 3,
+      "tutor": "Doug Funny",
+      "vacinado": false,
+      "servicos": [
+        {
+          "serviço": "unhas aparadas",
+          "data": "29-03-2021"
+        }
+      ]
+    },
+    {
+      "nome": "Coragem",
+      "tipo": "Cachorro",
+      "idade": 8,
+      "raca": "Vira-lata",
+      "peso": 5,
+      "tutor": "Muriel",
+      "vacinado": false,
+      "servicos": [
+        {
+          "serviço": "tosa",
+          "data": "29-03-2021"
+        }
+      ]
+    },
+    {
+      "nome": "Snoopy",
+      "tipo": "Cachorro",
+      "idade": 12,
+      "raca": "Beagle",
+      "peso": 5,
+      "tutor": "Charlie Brwon",
+      "vacinado": false,
+      "servicos": [
+        {
+          "serviço": "banho",
+          "data": "29-03-2021"
+        }
+      ]
+    },
+    {
+      "nome": "Satanás",
+      "tipo": "Gato",
+      "idade": 6,
+      "raca": "Vira-lata",
+      "peso": 5,
+      "tutor": "Bruxa do 71",
+      "vacinado": false,
+      "servicos": [
+        {
+          "serviço": "unhas aparadas",
+          "data": "29-03-2021"
+        }
+      ]
+    },
+    {
+      "nome": "Ikky",
+      "tipo": "Gato",
+      "idade": 12,
+      "raca": "Vira-lata",
+      "peso": 16,
+      "tutor": "Himself",
+      "vacinado": false,
+      "servicos": []
+    },
+    {
+      "nome": "Bartolomeu",
+      "tipo": "Gato",
+      "idade": 11,
+      "raca": "Vira-lata",
+      "peso": 12,
+      "tutor": "Hendy",
+      "vacinado": false,
+      "servicos": []
+    },
+    {
+      "nome": "Eva",
+      "tipo": "Gato",
+      "idade": 3,
+      "raca": "Persa",
+      "peso": 13,
+      "tutor": "Hendy",
+      "vacinado": false,
+      "servicos": []
+    }
+  ]
+}
