@@ -89,6 +89,16 @@
       "tutor": "Hendy",
       "vacinado": false,
       "servicos": []
+    },
+    {
+      "nome": "Raimunda",
+      "tipo": "Gato",
+      "idade": 8,
+      "raca": "Persa",
+      "peso": 6,
+      "tutor": "Hendy",
+      "vacinado": false,
+      "servicos": []
     }
   ]
 }

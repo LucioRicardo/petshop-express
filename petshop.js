@@ -2,6 +2,7 @@ const moment = require('moment');
 const fs = require('fs');
 
 let db = fs.readFileSync('./db.json', 'utf-8');
+db = JSON.parse(db);
 
 const petshop = {
     atualizarBanco: () => {
@@ -14,17 +15,21 @@ const petshop = {
     },
 
     listarPets: () => {
+
+        petshop.atualizarBanco();
+        let texto = "";
+
         db.pets.forEach(pet => {
             let {nome, tipo, raca, tutor, vacinado, servicos} = pet;
-            console.log(`
-            Nome: ${nome},
-            Tipo: ${tipo},
-            Raça: ${raca},
-            Tutor: ${tutor},
-            Vacinado?: ${vacinado ? "Vacinado" : "Não Vacinado"},
-            Serviços: ${servicos.forEach(servico => console.log(`${servico.serviço} - ${servico.data}`))}.
-            `);
+            
+            texto += (`Nome: ${nome}, Tipo: ${tipo}, Raça: ${raca}, Tutor: ${tutor}, Vacinado?: ${vacinado ? "Vacinado" : "Não Vacinado"} `);
+            servicos.forEach(servico => {
+                texto += (`${servico.serviço} - ${servico.data}`);
+            });
         });
+
+        return texto;
+
     },
 
     vacinarPet: nome => {
@@ -50,8 +55,8 @@ const petshop = {
     adicionarMiAu: arrayPets => {
         
         db.pets.push(...arrayPets);
-        
-        atualizarBanco();
+
+        petshop.atualizarBanco();
     
         arrayPets.forEach(pet => {
             console.log(`${pet.nome} foi adicionado.`)
